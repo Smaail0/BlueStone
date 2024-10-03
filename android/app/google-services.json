@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601599538905",
+    "project_id": "stegmessage-830d8",
+    "storage_bucket": "stegmessage-830d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601599538905:android:4bbd4f78e80e617c9370c8",
+        "android_client_info": {
+          "package_name": "com.ismailsouissi.stegmessage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7apTfWkfWji3OrEyYKDGAXDGSSu8OehU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
