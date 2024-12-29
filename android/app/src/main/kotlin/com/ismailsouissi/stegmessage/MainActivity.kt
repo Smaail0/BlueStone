@@ -1,4 +1,4 @@
-package com.example.stegmessage
+package com.ismailsouissi.stegmessage
 
 import io.flutter.embedding.android.FlutterActivity
 

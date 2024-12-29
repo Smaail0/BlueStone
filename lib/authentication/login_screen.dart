@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               Text(
-                'StegMessage',
+                'BlueStone',
                 style: GoogleFonts.openSans(
                   fontSize: 28,
                   fontWeight: FontWeight.w500,

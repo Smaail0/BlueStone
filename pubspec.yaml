@@ -54,6 +54,7 @@ dependencies:
   uuid: ^4.4.2
   intl: ^0.17.0
   grouped_list: ^6.0.0
+  change_app_package_name: ^1.4.0
 
 
 

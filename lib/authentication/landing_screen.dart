@@ -42,7 +42,7 @@ class _LandingScreenState extends State<LandingScreen> {
           height: 230,
           child: Column(
             children: [
-              Image.asset(AssetsManager.stegLogo),
+              Image.asset(AssetsManager.blueStoneLogo),
               const LinearProgressIndicator()
             ],
           ),
