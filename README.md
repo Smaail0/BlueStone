@@ -4,9 +4,11 @@ BlueStone est une application de messagerie moderne utilisant Flutter.
 Ce projet est connecté à Firebase et permet aux utilisateurs d'envoyer des messages, de rejoindre des salles, et bien plus.
 
 ## Fonctionnalités
-- Envoi de messages en temps réel
-- Création et gestion de salles de discussion
-- Interface utilisateur moderne
+- **Écran de discussion** : Conversations intuitives avec une interface conviviale.
+- **Ajout et suppression d'amis** : Gérez facilement votre liste d'amis.
+- **Liste d'amis** : Affichez tous vos amis connectés à l'application.
+- **Messagerie en temps réel avec fonctionnalités "vu"** : Les messages sont envoyés instantanément, et vous savez quand ils ont été lus.
+- **Interface utilisateur moderne** : Une expérience visuelle agréable avec un design épuré et interactif.
 
 ## Installation
 1. Clonez le dépôt :
