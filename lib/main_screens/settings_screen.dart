@@ -86,7 +86,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       body: Center(
         child: Card(
           child: SwitchListTile(
-            title: const Text('Change Theme'),
+            title: const Text('Change the Theme'),
             secondary: Container(
               height: 30,
               width: 30,

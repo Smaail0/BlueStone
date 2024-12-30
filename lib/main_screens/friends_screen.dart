@@ -31,9 +31,7 @@ class _FriendsScreenState extends State<FriendsScreen> {
             placeholder: 'Search',
             style: const TextStyle(color: Colors.white),
             prefixIcon: const FaIcon(FontAwesomeIcons.magnifyingGlass),
-            onChanged: (value) {
-              print(value);
-            },
+            onChanged: (value) {},
           ),
           const Expanded(
               child: FriendsList(

@@ -305,7 +305,7 @@ class ChatProvider extends ChangeNotifier {
         return UserModel.fromMap(snapshot.data() as Map<String, dynamic>);
       }
     } catch (e) {
-      print('Error fetching user model: $e');
+      print('Failed to get user model by UID: $e');
     }
     return null; // Return null if user not found or an error occurs
   }

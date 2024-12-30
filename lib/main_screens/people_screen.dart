@@ -45,7 +45,7 @@ class _PeopleScreenState extends State<PeopleScreen> {
                 if (snapshot.data!.docs.isEmpty) {
                   return Center(
                       child: Text(
-                    'No users found',
+                    'No users were found',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.openSans(
                       fontSize: 18,

@@ -59,16 +59,6 @@ class Constants {
   static const String chats = 'chats';
   static const String messages = 'messages';
 
-  static const String addresss = 'address';
-  static const String entryDate = 'entryDate';
-  static const String maintenanceDate = 'maintenanceDate';
-  static const String lastMaintenanceDate = 'lastMaintenanceDate';
-  static const String voltage = 'voltage';
-  static const String current = 'current';
-  static const String power = 'power';
-  static const String latitude = 'latitude';
-  static const String longitude = 'longitude';
-
   static const String stations = 'stations';
   static const String stationID = 'stationID';
 }

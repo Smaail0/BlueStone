@@ -40,7 +40,7 @@ Future<File?> pickImage({
       final pickedFile =
           await ImagePicker().pickImage(source: ImageSource.camera);
       if (pickedFile == null) {
-        onFail('No Image selected');
+        onFail('No Image was selected');
       } else {
         fileImage = File(pickedFile.path);
       }

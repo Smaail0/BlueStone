@@ -61,8 +61,6 @@ class _ChatScreenState extends State<ChatScreen> {
     final contactImage = arguments[Constants.contactImage];
     // group id
     final groupID = arguments['groupID'];
-    // check if the group id is empty - then it's a chat with a friend else it's a group chat
-    final isGroupChat = groupID.isNotEmpty ? true : false;
 
     return Scaffold(
       appBar: AppBar(

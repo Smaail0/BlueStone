@@ -6,7 +6,6 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:stegmessage/constants.dart';
-import 'package:stegmessage/models/station_model.dart';
 import 'package:stegmessage/models/user_model.dart';
 import 'package:stegmessage/utilities/global_methods.dart';
 
@@ -366,79 +365,6 @@ class AuthenticationProvider extends ChangeNotifier {
       });
     } on FirebaseAuthException catch (e) {
       print(e);
-    }
-  }
-
-  Future<void> addStation({
-    required StationModel stationModel,
-    required Function onSuccess,
-    required Function onFail,
-  }) async {
-    try {
-      _isLoading = true;
-      notifyListeners();
-
-      await _firestore
-          .collection(Constants.stations)
-          .doc(stationModel.stationId)
-          .set(stationModel.toMap());
-      _isLoading = false;
-      onSuccess();
-      notifyListeners();
-    } on FirebaseException catch (e) {
-      _isSuccessful = false;
-      _isLoading = false;
-      notifyListeners();
-      onFail(e.toString());
-    }
-  }
-
-  Future<StationModel?> getStation(String stationId) async {
-    _isLoading = true;
-    notifyListeners();
-
-    try {
-      DocumentSnapshot<Map<String, dynamic>> documentSnapshot =
-          await _firestore.collection(Constants.stations).doc(stationId).get();
-
-      if (documentSnapshot.exists) {
-        _isLoading = false;
-        notifyListeners();
-        return StationModel.fromMap(documentSnapshot.data()!);
-      } else {
-        _isLoading = false;
-        notifyListeners();
-        return null;
-      }
-    } catch (e) {
-      _isLoading = false;
-      notifyListeners();
-      return null;
-    }
-  }
-
-  // getting all stations from firestore
-  Future<List<StationModel>> getAllStations() async {
-    _isLoading = true;
-
-    try {
-      QuerySnapshot<Map<String, dynamic>> querySnapshot =
-          await _firestore.collection(Constants.stations).get();
-      _isSuccessful = true;
-      _isLoading = false;
-
-      final List<StationModel> stations = querySnapshot.docs.map((doc) {
-        return StationModel.fromMap(doc.data());
-      }).toList();
-
-      _isLoading = false;
-      _isSuccessful = true;
-      return stations;
-    } catch (e) {
-      _isSuccessful = false;
-      _isLoading = false;
-      notifyListeners();
-      return [];
     }
   }
 

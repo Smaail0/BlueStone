@@ -30,9 +30,7 @@ class _FriendRequestScreenState extends State<FriendRequestScreen> {
             placeholder: 'Search',
             style: const TextStyle(color: Colors.white),
             prefixIcon: const Icon(Icons.search),
-            onChanged: (value) {
-              print(value);
-            },
+            onChanged: (value) {},
           ),
           const Expanded(
               child: FriendsList(

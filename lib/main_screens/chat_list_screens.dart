@@ -28,9 +28,7 @@ class _ChatListScreensState extends State<ChatListScreens> {
             placeholder: 'Search',
             style: const TextStyle(color: Colors.white),
             prefixIcon: const FaIcon(FontAwesomeIcons.magnifyingGlass),
-            onChanged: (value) {
-              print(value);
-            },
+            onChanged: (value) {},
           ),
           Expanded(
               child: StreamBuilder<List<LastMessageModel>>(
